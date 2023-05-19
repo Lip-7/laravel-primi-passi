@@ -14,5 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+Route::get('/features', function () {
+    return view('features');
+});
+Route::get('/pricing', function () {
+    return view('pricing');
+});
+Route::get('/about', function () {
+    $data = [
+        'students' => [
+            'Pdor', 'Ajeje Brazorf', 'Asdrubale'
+        ],
+        'teachers' => [
+            'Clelia', 'Samuel', 'Marco'
+        ]
+    ];
+    return view('about', $data);
 });
