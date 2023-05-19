@@ -6,7 +6,7 @@
         <ul class=" flex flex-wrap justify-center gap-4">
             @foreach ($students as $std)
                 <li>
-                    <div class="overflow-hidden bg-white rounded shadow-md text-slate-500 shadow-slate-200 w-[300px]">
+                    <div class="overflow-hidden bg-white rounded shadow-md text-slate-500 shadow-slate-200 w-[300px] hover:scale-110 transition-all">
                         <figure>
                           <img src="https://picsum.photos/id/777/800/600" alt="card image" class="aspect-video w-full" />
                         </figure>
@@ -24,7 +24,7 @@
         <ul class=" flex flex-wrap justify-center gap-4">
             @foreach ($teachers as $tch)
                 <li>
-                    <div class="overflow-hidden bg-white rounded shadow-md text-slate-500 shadow-slate-200 w-[300px]">
+                    <div class="overflow-hidden bg-white rounded shadow-md text-slate-500 shadow-slate-200 w-[300px] hover:scale-110 transition-all">
                         <figure>
                           <img src="https://picsum.photos/id/27/800/600" alt="card image" class="aspect-video w-full" />
                         </figure>
